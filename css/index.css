@@ -117,6 +117,7 @@ header nav a {
 
 .home-top-content {
 	display: flex;
+	justify-content: space-evenly;
 	border-top: 1px solid black;
 	padding-top: 30px;
 	margin-top: 30px;
@@ -125,19 +126,19 @@ header nav a {
 
 
 .home-text-content {
-	width: 50%
+	width: 45%
 }
 
 .home-bottom-content {
-	margin-top: 2%;
-	border-bottom: 1px solid black;
 	display: flex;
-	justify-content: space-between;
-	padding-bottom: 30px;
+	justify-content: space-around;
+	margin-top: 3%;
+	padding-bottom: 3%;
+	border-bottom: 1px solid black;
 }
 
 .bottom-text-content {
-	width: 95%;
+	width: 30%;
 	
 }
 
