@@ -69,13 +69,24 @@ h1, h2, h3, h4, h5 {
 	width: 900px;
 	margin: auto;
 }
-
+header {
+	display: flex;
+	flex-direction: column;
+	margin-top: 2%
+}
 header nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 25px;
 	margin-bottom: 25px;
+}
+
+header img {
+	display: block;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 header nav a {
@@ -91,8 +102,8 @@ header nav a {
 }
 
 .hero-text h1 {
-	 font-size: 75px;
-	 margin-right: 20px;	
+	font-size: 75px;
+	margin-right: 20px;	
 }
 
 .hero-text button{
@@ -118,7 +129,7 @@ header nav a {
 }
 
 .home-bottom-content {
-	margin-top: 30px;
+	margin-top: 2%;
 	border-bottom: 1px solid black;
 	display: flex;
 	justify-content: space-between;
@@ -152,7 +163,7 @@ footer {
 	header {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
+		justify-content: space-evenly;
 		margin-top: 30px;
 		margin-left: 12px;
 		margin-right: 45px;
@@ -166,17 +177,28 @@ footer {
 	.container{
 		width: 95%; 
 	}
-	.hero img {
-		display: none;
-	}
 
 	header .logo {
+		display: flex;
+		align-items: center;
 		margin: 0 auto;
 		order: -1;
 	}
 
+	.hero img {
+		display: none;
+	}
+
+	.hero {
+		margin: 0;
+	}
+
 	.middle-img {
 		width: 100%
+	}
+
+	.home-bottom-content {
+
 	}
 	
 
