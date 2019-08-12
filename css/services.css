@@ -1,0 +1,442 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+  /* background-color: whitesmoke; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Roboto";
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+  width: 876px;
+  margin: auto;
+}
+
+p {
+  font-family: "Roboto";
+  line-height: 1.5;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-family: "Roboto";
+}
+
+header nav a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: royalblue;
+}
+
+header nav a:hover {
+  color: #48a5ff;
+  transition-duration: 0.2s;
+}
+
+.services:active {
+  text-decoration: underline;
+}
+
+.top-content {
+  margin-top: 45px;
+  margin-bottom: 45px;
+  padding-bottom: 45px;
+  border-bottom: 1px solid;
+}
+
+.text-content h1 {
+  font-size: 25px;
+}
+
+.middle-content {
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 880px; */
+  justify-content: space-between;
+}
+/* .card-content {
+  border: 1px solid c;
+  display: flex;
+  border-radius: 10px;
+  width: 47%;
+  padding: 15px;
+  background: white;
+  margin-bottom: 45px;
+}
+
+.card-content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 10%;
+}
+
+.card-content .card-img {
+  display: flex;
+  align-self: flex-end;
+  width: 7%;
+} */
+
+.card-content {
+  border: 1px solid #404040;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 47%;
+  padding: 2%;
+  background: white;
+  margin-bottom: 45px;
+}
+
+.card-content:hover {
+  transform: translate(-5px, -10px);
+  cursor: pointer;
+  border: 1px solid royalblue;
+}
+
+.card-content .card-img {
+  align-self: flex-end;
+  margin-top: 5%;
+  cursor: pointer;
+}
+
+.card-content a {
+  text-decoration: none;
+}
+
+/* .card-content .card-img {
+  position: absolute;
+  bottom: 30px;
+  left: 500px;
+} */
+
+/* .card-content button {
+  border: 1px solid royalblue;
+  color: royalblue;
+  width: 30%;
+  padding: 10px 10px 10px 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+} */
+
+.bottom-content {
+  margin-top: 30px;
+  border-top: 1px solid black;
+  padding-top: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bottom-text-content {
+  line-height: 1.3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact {
+  line-height: 1.3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bottom-content img {
+  width: 47%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  margin-bottom: 40px;
+  color: #404040;
+}
+
+/* ..................HOME PAGE................... */
+
+.hero {
+  margin-top: 40px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-text h1 {
+  font-size: 75px;
+  margin-right: 20px;
+}
+
+.hero-text button {
+  font-size: 20px;
+  padding: 5px 40px 5px 40px;
+}
+
+.hero img {
+  margin-left: 20px;
+}
+
+.home-top-content {
+  display: flex;
+  border-top: 1px solid #404040;
+  padding-top: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.home-text-content {
+  width: 50%;
+}
+
+.home-bottom-content {
+  margin-top: 30px;
+  border-bottom: 1px solid s#404040;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.bottom-text-content {
+  display: flex;
+  width: 95%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 30px;
+  height: 130px;
+}
+
+p {
+  font-family: "Roboto";
+  line-height: 1.5;
+  color: #404040;
+}
+
+li {
+  font-family: "Roboto";
+  margin: 1.5%;
+  color: #404040;
+}
+
+h2 {
+  color: royalblue;
+  font-size: 1.3rem;
+  cursor: default;
+}
+
+h1 {
+  color: royalblue;
+}
+
+h3 {
+  font-size: 1.6rem;
+  color: royalblue;
+}
+
+.card-img {
+  width: 24px;
+  height: 24px;
+}
+
+
+/* ------------ Tablet Media Query ------------ */
+
+@media (max-width: 800px){
+	
+	.container {
+		width: auto;
+	}
+	
+	header {
+		margin: 3%;
+	}
+
+
+	.services-header-img {
+		width: 100%;
+	}
+
+	.top-content {
+		width: 95%;
+		display:block;
+		margin-left: auto;
+		margin-right: auto;		
+	}
+
+	.middle-content {
+		justify-content: space-around;
+	}
+
+	.bottom-content {
+		flex-direction: column-reverse;
+		width: 95%;
+	}
+
+	.services-info-img {
+		align-self: center;
+		margin-bottom: 2%;
+	}
+
+
+
+
+}
